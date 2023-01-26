@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a,b;
+    cout<<"enter number starts from:";
+    cin>>a;
+    cout<<"enter number ends with:";
+    cin>>b;
+    for(int loop=a; loop<=b; loop++)
+    {
+    	 cout << "All numbers between a and b are:"<<loop<<endl;
+	}
+    return 0;
+}
