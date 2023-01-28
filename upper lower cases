@@ -1,0 +1,30 @@
+#include <iostream>
+#include <conio.h>
+#include <stdio.h>
+using namespace std;
+int main()
+{
+    char str[100];
+    int i;
+    int upper=0,lower=0,num=0,special=0;;
+    cout<<"Please enter the string \n";
+    gets(str); 
+    for(i=0; str[i] != '\0'; i++){
+            if(str[i]>='A' && str[i]<='Z') {
+                upper++;
+    }else if(str[i]>='a' && str[i]<='z') {
+                lower++;
+    }else if(str[i]>='1' && str[i]<='9') {
+                num++;
+    }
+    else{
+        special++;
+    }
+    }
+    cout<<"Upper case letters: "<<upper;
+    cout<<"\nLower case letters: "<<lower;
+    cout<<"\nnumbers: "<<num;
+    cout<<"\nSpecial characters: "<<special;
+    getch();
+    return 0;
+}
