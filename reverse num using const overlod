@@ -1,0 +1,53 @@
+#include<iostream>
+using namespace std;
+class reverse
+{
+	private:
+		int i;
+		public:
+	reverse(int n)
+	{
+		
+		cout<<endl<<"The reverse of the Entered number: ";
+		for(i=n;n>0;n=n/10)
+		{
+			cout<<n%10;
+		}
+	}
+	reverse(long int a)
+	{
+		cout<<endl<<" The reverse  of the Entered number: ";
+		for(i=a;a>0;a=a/10)
+		{
+			cout<<a%10;
+		}
+	}
+};
+int main()
+{
+	int choice;
+	cout<<"Enter choice: ";
+	cin>>choice;
+	switch(choice)
+	{
+		case 0:
+		{
+			int n;
+			cout<<"Enter a number to Display : ";
+			cin>>n;
+			reverse r(n);
+			break;
+		}
+		case 1:
+			{
+			 long int a ;
+			 cout<<"Enter  Number to Display 2: ";
+			 cin>>a;
+			 reverse r(a);
+		     break;
+		   }
+				default:
+					cout<<"Invilide Choice:";
+				
+	}
+}
