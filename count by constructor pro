@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+class legs {
+   public:
+       int chick; 
+       int cow;
+       int pig,total;
+       legs(int i, int n, int s)  
+        {  
+            chick= 2*i;  
+            cow = 4*n;  
+            pig= 4*s;
+            total=chick+cow+pig;
+        }  
+       void display()  
+        {  
+            cout<<"The total legs of chick cow and pig is";
+			cout<<total<<endl;  
+        }  
+};
+int main(void) {
+    legs e1 =legs(2,3,5);  
+    legs e2=legs(1,2,3); 
+    e1.display();  
+    e2.display();  
+    return 0;
+}
